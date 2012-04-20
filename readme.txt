@@ -28,6 +28,10 @@ http://jplayer.org/
 3. Activate the plugin.
 4. Have fun!
 
+== Screenshots ==
+
+1. Player in action
+
 == Change log ==
 
 = 1.0 =
