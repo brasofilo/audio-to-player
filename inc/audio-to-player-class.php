@@ -2,8 +2,8 @@
 /**
 * Audio Player
 *
-* @package 	Audio Player
-* @author 	Matt Varone
+* @package  Audio Player
+* @author   Matt Varone
 */
 
 if ( ! class_exists( 'MV_Audio_To_Player' ) )
@@ -39,7 +39,7 @@ if ( ! class_exists( 'MV_Audio_To_Player' ) )
         function init() 
         {
             
-			load_plugin_textdomain( 'mv-audio-to-player', false, plugin_dir_path( dirname( __FILE__ ) ) . '/lan' );
+            load_plugin_textdomain( 'mv-audio-to-player', false, plugin_dir_path( dirname( __FILE__ ) ) . '/lan' );
             
             add_action( 'the_posts', array( &$this, 'have_audio' ), 1, 1 );
             add_filter( 'post_audio', array( &$this, 'gallery' ), 10, 2 );
