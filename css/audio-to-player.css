@@ -17,20 +17,6 @@
  * Skin Version: 1.0 (jPlayer 2.1.0)
  * Date: 19th Apr 2012
  */
- 
-/* =Font
--------------------------------------------------------------- */
- 
-@font-face {
-    font-family: 'IconicStroke';
-    src: url('iconic/iconic-webfont.eot');
-    src: url('iconic/iconic-webfont.eot?#iefix') format('embedded-opentype'),
-      url('iconic/iconic-webfont.woff') format('woff'),
-      url('iconic/iconic-webfont.ttf') format('truetype'),
-      url('iconic/iconic-webfont.svg#FontomasCustomRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* =Player
 -------------------------------------------------------------- */
