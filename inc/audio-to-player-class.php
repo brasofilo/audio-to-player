@@ -30,7 +30,7 @@ if ( ! class_exists( 'MV_Audio_To_Player' ) )
         /** 
         * Init 
         * 
-        * Sets the necessary action and filter.
+        * Loads internationalization and sets the necessary action and filter.
         *
         * @return   void
         * @since    1.0
@@ -38,6 +38,9 @@ if ( ! class_exists( 'MV_Audio_To_Player' ) )
         
         function init() 
         {
+            
+			load_plugin_textdomain( 'mv-audio-to-player', false, plugin_dir_path( dirname( __FILE__ ) ) . '/lan' );
+            
             add_action( 'the_posts', array( &$this, 'have_audio' ), 1, 1 );
             add_filter( 'post_audio', array( &$this, 'gallery' ), 10, 2 );
         }
@@ -54,13 +57,12 @@ if ( ! class_exists( 'MV_Audio_To_Player' ) )
         function have_audio( $posts ) {
             if ( empty( $posts ) || $this->has_audio )
                 return $posts;
-    
+            
             foreach ( $posts as $post ) {
                 if ( preg_match('/\.(mp3|mp4|m4a)/i', $post->post_content) ) {
                     $this->has_audio = true;
                     break;
                 }
-                do_action( 'mv_audio_to_player_have_audio_check', $post );
             }
     
             if ( $this->has_audio == true )

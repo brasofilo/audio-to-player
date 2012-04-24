@@ -109,30 +109,6 @@ a.jp-volume-max  {
     position:relative;
 }
 
-a.jp-play:before,  a.jp-pause:before,
-a.jp-mute:before, a.jp-unmute:before {
-    font-family:'IconicStroke';
-    font-size:1em;
-    color:#5b6365;
-    position:absolute;
-    text-indent:0;
-    left:0;
-    top:0.7em;
-    bottom:0;
-    right:0;
-    height:auto;
-    text-align:center;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.7);
-}
-
-a.jp-mute:before, a.jp-unmute:before {
-    top:0.8em;
-}
-
-a.jp-play:hover:before,  a.jp-pause:hover:before,
-a.jp-mute:hover:before, a.jp-unmute:hover:before {
-    color:#888;
-}
 
 a.jp-play, a.jp-pause {
     border-right:1px solid #ddd;
@@ -148,24 +124,20 @@ a.jp-mute, a.jp-unmute {
     box-shadow:-1px 0 0 rgba(255,255,255,0.7);
 }
 
-a.jp-play:before {
-    content:'>';
+a.jp-play {
+    background:url(../img/play.png) no-repeat center center;
 }
 
-a.jp-pause:before {
-    content:':';
+a.jp-pause {
+    background:url(../img/pause.png) no-repeat center center;
 }
 
-a.jp-mute:before {
-    content:'+';
+a.jp-mute {
+    background:url(../img/on.png) no-repeat center center;
 }
 
-a.jp-unmute:before {
-    content:'-';
-}
-
-a.jp-play, a.jp-pause {
-	padding-left:1.9%;
+a.jp-unmute {
+    background:url(../img/off.png) no-repeat center center;
 }
 
 /* =Progress Bar
@@ -225,11 +197,11 @@ div.jp-volume-bar-value, div.jp-play-bar {
 
 div.jp-audio div.jp-type-single a.jp-mute,
 div.jp-audio div.jp-type-single a.jp-unmute {
-	margin-left: 71%;	
+	margin-left: 74%;	
 }
 
 .jp-volume-bar-container {
-    margin-left:1.5%;
+    margin-left:0.5%;
  	width:15%;
 	float:left; 
 	padding-top:0.9em; 

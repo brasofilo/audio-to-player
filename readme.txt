@@ -2,9 +2,9 @@
 Contributors: sksmatt
 Donate link: http://www.mattvarone.com/donate/
 Tags: Audio, Player, HTML5, MP3, MP4, M4A, Fallback, Simple, Option-less
-Requires at least: 3.3
+Requires at least: 3.0
 Tested up to: 3.3
-Stable tag: 1.0
+Stable tag: 1.1
 
 Converts MP3, MP4 and M4A links to a skineable responsive HTML5 audio jPlayer jQuery player with flash fallback support.
 
@@ -15,11 +15,15 @@ Unobtrusive HTML5/JS/FLASH audio to player plugin. Converts MP3, MP4 and M4A lin
 Uses jPlayer for jQuery
 http://jplayer.org/
 
+If you need to modify the CSS style of the audio player, you can copy the 'audio-to-player.css' file from the plugin directory to your theme’s directory and make your modifications there. This way, you won’t lose your changes when you update the plugin. You can also specify an alternative CSS route, or prevent loading the extra CSS hooking to the 'mv_audio_to_player_enqueue_style' filter.
+
 * Supports MP3, MP4 and M4A
 * Fallback Support
 * Simple option-less plugin
-* Responsive CSS can be replaced by placing an 'audio-to-player.css' file on the theme or either via hook
+* Responsive CSS stlye
+* Filters and actions
 * Support for internationalization
+* English and Spanish languages
 
 == Installation ==
 

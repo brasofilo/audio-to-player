@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Audio To Player
-Version: 1.0
+Version: 1.1
 Plugin URI: mattvarone.com
 Description: Converts MP3, MP4 and M4A links to a skineable HTML5 audio player with fallback support.
 Author: Matt Varone
@@ -37,7 +37,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 |--------------------------------------------------------------------------
 */
 
-define( 'MV_AUDIO_TO_PLAYER_VERSION', '1.0' );
+define( 'MV_AUDIO_TO_PLAYER_VERSION', '1.1' );
 
 /*
 |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ add_action( 'plugins_loaded', 'mv_audio_to_player_init' );
 if ( ! function_exists( 'mv_audio_to_player_activation' ) ) {	
 	function mv_audio_to_player_activation() {
 		// check compatibility
-		if ( version_compare( get_bloginfo( 'version' ), '3.3' ) >= 0 )
+		if ( version_compare( get_bloginfo( 'version' ), '3.0' ) >= 0 )
 		deactivate_plugins( basename( __FILE__ ) );
 	}	
 }
