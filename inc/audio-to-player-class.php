@@ -30,7 +30,7 @@ if ( ! class_exists( 'MV_Audio_To_Player' ) )
         /** 
         * Init 
         * 
-        * Loads internationalization and sets the necessary action and filter.
+        * Loads internationalization and sets the necessary action
         *
         * @return   void
         * @since    1.0
@@ -38,11 +38,8 @@ if ( ! class_exists( 'MV_Audio_To_Player' ) )
         
         function init() 
         {
-            
-            load_plugin_textdomain( 'mv-audio-to-player', false, plugin_dir_path( dirname( __FILE__ ) ) . '/lan' );
-            
+			load_plugin_textdomain( 'mv-audio-to-player', false, plugin_dir_path( dirname( __FILE__ ) ) . '/lan' );         
             add_action( 'the_posts', array( &$this, 'have_audio' ), 1, 1 );
-            add_filter( 'post_audio', array( &$this, 'gallery' ), 10, 2 );
         }
         
         /** 
