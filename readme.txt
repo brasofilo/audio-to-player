@@ -1,6 +1,7 @@
 === Audio To Player ===
 Contributors: sksmatt
 Donate link: http://www.mattvarone.com/donate/
+Plugin URI: http://www.mattvarone.com/featured-content/audio-to-player/
 Tags: Audio, Player, HTML5, MP3, MP4, M4A, Fallback, Simple, Option-less
 Requires at least: 3.0
 Tested up to: 3.3
